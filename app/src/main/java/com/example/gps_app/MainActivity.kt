@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         verifyLocationPermissions(this)
-
-//        setSupportActionBar(toolbar)
+        setSupportActionBar(my_toolbar)
+        supportActionBar?.setTitle("GPS INE App")
 
         // Create persistent LocationManager reference
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager?
